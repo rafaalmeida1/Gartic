@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Gartic</title>
+  </head>
+  <body>
+    <div class="container">
+      <canvas id="screen"> </canvas>
+
+      <button class="btn btn-colors" id="btn-colors" onclick="popUp()">
+        Line Color
+      </button>
+
+      <div id="colors" class="colors">
+        <div class="color" style="background-color: #ffffff"></div>
+        <div class="color" style="background-color: #ff0000"></div>
+        <div class="color" style="background-color: #ff8000"></div>
+        <div class="color" style="background-color: #ffff00"></div>
+        <div class="color" style="background-color: #80ff00"></div>
+        <div class="color" style="background-color: #00ff00"></div>
+        <div class="color" style="background-color: #00ff80"></div>
+        <div class="color" style="background-color: #00ffff"></div>
+        <div class="color" style="background-color: #0080ff"></div>
+        <div class="color" style="background-color: #0000ff"></div>
+        <div class="color" style="background-color: #8000ff"></div>
+        <div class="color" style="background-color: #ff00ff"></div>
+        <div class="color" style="background-color: #ff0080"></div>
+        <div class="color" style="background-color: #ff0000"></div>
+        <div class="color" style="background-color: #000000"></div>
+      </div>
+    </div>
+
+    <div class="lineControl">
+      <label for="lineWidth">Line Width</label>
+      <input type="range" id="lineWidth" min="1" max="100" value="1" />
+    </div>
+
+    <button class="btn btn-eraser" id="btn-eraser" onclick="erase()">
+      Eraser
+    </button>
+
+    <button class="btn btn-clear" id="btn-clear">Clear</button>
+
+    <script src="popUps.js"></script>
+  </body>
+</html>
